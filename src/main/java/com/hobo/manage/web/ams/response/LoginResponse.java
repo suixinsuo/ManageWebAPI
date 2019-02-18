@@ -2,6 +2,8 @@ package com.hobo.manage.web.ams.response;
 
 import java.io.Serializable;
 
+import com.hobo.domain.agent.AgentUser;
+
 /**
  * @ClassName LoginResponse
  * @Description 登录请求返回参数
@@ -16,14 +18,14 @@ public class LoginResponse implements Serializable {
 	private String token;
 	
 	// 用户id，即邮箱
-	private String email;
-	
-	public String getEmail() {
-		return email;
+	private AgentUser agentUser;
+
+	public AgentUser getAgentUser() {
+		return agentUser;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setAgentUser(AgentUser agentUser) {
+		this.agentUser = agentUser;
 	}
 
 	public String getToken() {

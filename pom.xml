@@ -23,6 +23,22 @@
 			<artifactId>hibernate-validator</artifactId>
 			<version>5.2.4.Final</version>
 		</dependency>
+		<dependency>
+		    <groupId>com.github.pagehelper</groupId>
+		    <artifactId>pagehelper</artifactId>
+		    <version>4.1.4</version>
+		</dependency>
+		<dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>4.3.14.RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+			<groupId>hobo.domain</groupId>
+  			<artifactId>domain</artifactId>
+  			<version>1.0</version>
+		</dependency>
 
 	</dependencies>
 	<repositories>
