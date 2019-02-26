@@ -2,6 +2,8 @@ package com.hobo.manage.web.ams.request.user;
 
 import javax.validation.constraints.Pattern;
 
+import org.hibernate.validator.constraints.NotBlank;
+
 import com.hobo.manage.web.ams.request.BaseForm;
 
 /**
@@ -19,6 +21,7 @@ public class EditUserStatusForm extends BaseForm{
 	private String status;
 	
 	// 要修改的用户id
+	@NotBlank(message="待修改的用户id不能为空")
 	private String id;
 
 	public String getId() {

@@ -1,8 +1,7 @@
 package com.hobo.manage.web.ams.request;
 
-import java.io.Serializable;
 
-public class PageForm implements Serializable {
+public class PageForm extends BaseForm {
 
 	private static final long serialVersionUID = 5707885020076836507L;
 	

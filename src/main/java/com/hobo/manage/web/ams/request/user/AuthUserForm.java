@@ -1,5 +1,7 @@
 package com.hobo.manage.web.ams.request.user;
 
+import java.util.Set;
+
 import com.hobo.manage.web.ams.request.BaseForm;
 
 /**
@@ -11,5 +13,26 @@ import com.hobo.manage.web.ams.request.BaseForm;
 public class AuthUserForm extends BaseForm{
 
 	private static final long serialVersionUID = 2674819271724127914L;
+	// 代理商用户id
+	private String id;
+	
+	// 授予的菜单集合
+	private Set<String> menuArray;
 
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public Set<String> getMenuArray() {
+		return menuArray;
+	}
+
+	public void setMenuArray(Set<String> menuArray) {
+		this.menuArray = menuArray;
+	}
+	
 }

@@ -17,6 +17,8 @@ public class AgentUserInfoResponse implements Serializable{
     private String name;
 
     private String status;
+    // 状态名称
+    private String statusName;
 
     private Date createTime;
 
@@ -25,8 +27,16 @@ public class AgentUserInfoResponse implements Serializable{
     private String email;
 
     private String mobile;
+    
+    public String getStatusName() {
+		return statusName;
+	}
 
-    public String getId() {
+	public void setStatusName(String statusName) {
+		this.statusName = statusName;
+	}
+
+	public String getId() {
 		return id;
 	}
 

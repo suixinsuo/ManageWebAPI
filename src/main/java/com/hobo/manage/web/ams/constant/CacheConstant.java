@@ -24,4 +24,14 @@ public class CacheConstant {
 		return new StringBuffer().append("com.hobo.manage.web.ams.constant.CacheConstant.getLoginPwdErrorTimeKey")
 				.append(id).toString();
 	}
+	
+	public static String getActiveAgentIdEmailKey(String id) {
+		return new StringBuffer().append("com.hobo.manage.web.ams.constant.CacheConstant.getActiveAgentIdEmailKey")
+				.append(id).toString();
+	}
+	
+	public static String getAuthCacheKey(String token) {
+		return new StringBuffer().append("com.hobo.manage.web.ams.constant.CacheConstant.getAuthCacheKey")
+				.append(token).toString();
+	}
 }
