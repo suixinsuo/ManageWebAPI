@@ -1,7 +1,5 @@
 package com.hobo.manage.web.ams.request.trans;
 
-import java.util.Date;
-
 import com.hobo.manage.web.ams.request.PageForm;
 
 /**
@@ -16,13 +14,13 @@ public class SearchTransferForm extends PageForm {
 	// 转帐类型 0:提现 1:转账
 	private String transferType;
 	// 申请开始时间
-	private Date beginApplyDate;
+	private String beginApplyDate;
 	// 申请结束时间
-	private Date endApplyDate;
+	private String endApplyDate;
 	// 转账处理开始时间
-	private Date beginDealDate;
+	private String beginDealDate;
 	// 转账处理结束时间
-	private Date endDealDate;
+	private String endDealDate;
 	// 转账记录id
 	private String id;
 	// 转账状态 0: 转账申请 1: 转账成功 2: 转账失败 3: 转账取消 4：转账处理中
@@ -33,30 +31,6 @@ public class SearchTransferForm extends PageForm {
 	}
 	public void setTransferType(String transferType) {
 		this.transferType = transferType;
-	}
-	public Date getBeginApplyDate() {
-		return beginApplyDate;
-	}
-	public void setBeginApplyDate(Date beginApplyDate) {
-		this.beginApplyDate = beginApplyDate;
-	}
-	public Date getEndApplyDate() {
-		return endApplyDate;
-	}
-	public void setEndApplyDate(Date endApplyDate) {
-		this.endApplyDate = endApplyDate;
-	}
-	public Date getBeginDealDate() {
-		return beginDealDate;
-	}
-	public void setBeginDealDate(Date beginDealDate) {
-		this.beginDealDate = beginDealDate;
-	}
-	public Date getEndDealDate() {
-		return endDealDate;
-	}
-	public void setEndDealDate(Date endDealDate) {
-		this.endDealDate = endDealDate;
 	}
 	public String getId() {
 		return id;
@@ -69,5 +43,29 @@ public class SearchTransferForm extends PageForm {
 	}
 	public void setTransferStatus(String transferStatus) {
 		this.transferStatus = transferStatus;
+	}
+	public String getBeginApplyDate() {
+		return beginApplyDate;
+	}
+	public void setBeginApplyDate(String beginApplyDate) {
+		this.beginApplyDate = beginApplyDate;
+	}
+	public String getEndApplyDate() {
+		return endApplyDate;
+	}
+	public void setEndApplyDate(String endApplyDate) {
+		this.endApplyDate = endApplyDate;
+	}
+	public String getBeginDealDate() {
+		return beginDealDate;
+	}
+	public void setBeginDealDate(String beginDealDate) {
+		this.beginDealDate = beginDealDate;
+	}
+	public String getEndDealDate() {
+		return endDealDate;
+	}
+	public void setEndDealDate(String endDealDate) {
+		this.endDealDate = endDealDate;
 	}
 }

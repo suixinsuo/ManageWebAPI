@@ -34,6 +34,8 @@ public enum BusinessErrorCode {
 	NOPOWER_ADD_MERCHANT("NOPOWER_ADD_MERCHANT","只有管理员才能新增商家"),
 	SEND_MERCHANT_REGISTER_EMAIL_FAIL("SEND_MERCHANT_REGISTER_EMAIL_FAIL","发送注册通知邮件失败"),
 
+	// 提现管理
+	AMOUT_IS_NOTHAVE("AMOUT_IS_NOTHAVE","提现可用余额不足"),
 	;
 	private String id;
 	private String description;
