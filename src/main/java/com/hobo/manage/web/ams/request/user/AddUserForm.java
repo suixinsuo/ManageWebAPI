@@ -36,9 +36,6 @@ public class AddUserForm extends BaseForm{
 	@Pattern(regexp = RegularValidator.REGEX_EMAIL, message = "邮箱的格式不合法")
 	private String email;
 	// 手机号码
-	@NotBlank(message="手机号码不能为空")
-	@Size(min=1, max=15, message="长度是1-50位之间")
-	@Pattern(regexp = RegularValidator.REGEX_MOBILE, message = "手机号格式不合法")
 	private String mobile;
 	
 	private String ip;
