@@ -10,11 +10,11 @@ public class PageForm extends BaseForm {
 	
 	// 每页记录条数
 	private String limit;
-
+	
 	public String getPage() {
 		return page;
 	}
-
+	
 	public void setPage(String page) {
 		this.page = page;
 	}

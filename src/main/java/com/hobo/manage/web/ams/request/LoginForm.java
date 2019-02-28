@@ -33,6 +33,15 @@ public class LoginForm implements Serializable {
 	@Pattern(regexp = RegularValidator.REGEX_EMAIL, message = "邮箱的格式不合法")
 	private String email;
 	
+	private String ip;
+	public String getIp() {
+		return ip;
+	}
+
+	public void setIp(String ip) {
+		this.ip = ip;
+	}
+
 	public String getEmail() {
 		return email;
 	}

@@ -8,16 +8,16 @@ public class PageResponse<E> implements Serializable  {
 	private static final long serialVersionUID = 4394140786190008752L;
 
 	// 数量
-	private int total;
+	private long total;
 	
 	// 对象集合
 	private List<E> list;
 
-	public int getTotal() {
+	public long getTotal() {
 		return total;
 	}
 
-	public void setTotal(int total) {
+	public void setTotal(long total) {
 		this.total = total;
 	}
 
@@ -29,7 +29,7 @@ public class PageResponse<E> implements Serializable  {
 		this.list = list;
 	}
 	
-	public PageResponse(int total,List<E> list) {
+	public PageResponse(long total,List<E> list) {
 		this.total = total;
 		this.list = list;
 	}
