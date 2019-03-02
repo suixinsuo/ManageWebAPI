@@ -34,4 +34,28 @@ public class CacheConstant {
 		return new StringBuffer().append("com.hobo.manage.web.ams.constant.CacheConstant.getAuthCacheKey")
 				.append(token).toString();
 	}
+	/**
+	 * @Title: getSendCodeTotalKey
+	 * @Description: 发送短信总共次数缓存key
+	 * @param token
+	 * @return  String 
+	 * @throws
+	 */
+	public static String getSendCodeTotalKey(String token,String key,String mobile) {
+		return new StringBuffer().append("com.hobo.manage.web.ams.constant.CacheConstant.getSendCodeTotalKey")
+				.append(token).append(key).append(mobile).toString();
+	}
+	/**
+	 * @Title: getSendCodeKey
+	 * @Description: 获取发送短信验证码key
+	 * @param token
+	 * @param key
+	 * @return  String 
+	 * @throws
+	 */
+	public static String getSendCodeKey(String token,String key,String mobile) {
+		return new StringBuffer().append("com.hobo.manage.web.ams.constant.CacheConstant.getSendCodeKey")
+				.append(token).append(key).append(mobile).toString();
+	}
+	
 }

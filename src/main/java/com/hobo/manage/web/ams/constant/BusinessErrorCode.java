@@ -21,6 +21,9 @@ public enum BusinessErrorCode {
 	PASSWORD_IS_NOTNORMAL("PASSWORD_IS_NOTNORMAL","密码必须是6-20 位，字母、数字、字符"),
 	EDIT_EMAIL_STATUSIS_ZERO("EDIT_EMAIL_STATUSIS_ZERO","未启用的用户才能编辑邮箱"),
 	GENERATE_ACTIVE_LINK_FAILURE("GENERATE_ACTIVE_LINK_FAILURE","生成激活链接失败"),
+	SEND_SMS_ILLEGAL_MOBILE_FORMAT("SEND_SMS_ILLEGAL_MOBILE_FORMAT","手机号格式有误"), 
+	SEND_SMS_TOO_MUCH("SEND_SMS_TOO_MUCH","短信验证码发送次数过多，请稍后重试！"), 
+	SEND_SMS_TOO_FAST("SEND_SMS_TOO_FAST","短信发送次数太频繁！"), 
 	
 	// 新增代理商
 	CORPORATION_IS_NULL("CORPORATION_IS_NULL","姓名为空"),
@@ -36,7 +39,7 @@ public enum BusinessErrorCode {
 	SEND_MERCHANT_REGISTER_EMAIL_FAIL("SEND_MERCHANT_REGISTER_EMAIL_FAIL","发送注册通知邮件失败"),
 
 	// 提现管理
-	AMOUT_IS_NOTHAVE("AMOUT_IS_NOTHAVE","提现可用余额不足"),
+	AMOUT_IS_NOTHAVE("AMOUT_IS_NOTHAVE","提现可用余额不足"), 
 	;
 	private String id;
 	private String description;
@@ -69,7 +72,7 @@ public enum BusinessErrorCode {
 	 */
 	public static BusinessErrorCode getObject(String id) {
 		for (BusinessErrorCode bc : BusinessErrorCode.values()) {
-			if (bc.getId() == id) {
+			if (bc.getId().equals(id)) {
 				return bc;
 			}
 		}
