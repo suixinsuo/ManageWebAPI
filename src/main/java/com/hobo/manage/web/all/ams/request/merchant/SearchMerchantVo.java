@@ -17,7 +17,7 @@ public class SearchMerchantVo implements Serializable {
 	// 状态 0: 新增 1：提交审核 2：正常 3：审核未通过 9: 停用
 	private String status;
 	
-	private String parentId;
+	private String agentId;
 	// 页数
 	private String page;
 	// 每页记录条数
@@ -52,11 +52,11 @@ public class SearchMerchantVo implements Serializable {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getParentId() {
-		return parentId;
+	public String getAgentId() {
+		return agentId;
 	}
-	public void setParentId(String parentId) {
-		this.parentId = parentId;
+	public void setAgentId(String agentId) {
+		this.agentId = agentId;
 	}
 	public String getPage() {
 		return page;

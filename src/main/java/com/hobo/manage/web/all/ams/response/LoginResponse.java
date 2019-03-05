@@ -14,6 +14,39 @@ public class LoginResponse implements Serializable {
 	
 	// 登录返回token
 	private String token;
+	
+	// 企业性质 0：企业 1：个人
+	private String isEnterprise;
+	
+	// 代理商状态 0: 新增  1：提交审  2：正常   3：审核未通过  9: 停用
+	private String status;
+	
+	// 审核未通过原因
+	private String reason;
+	
+	public String getIsEnterprise() {
+		return isEnterprise;
+	}
+
+	public void setIsEnterprise(String isEnterprise) {
+		this.isEnterprise = isEnterprise;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getReason() {
+		return reason;
+	}
+
+	public void setReason(String reason) {
+		this.reason = reason;
+	}
 
 	public String getToken() {
 		return token;

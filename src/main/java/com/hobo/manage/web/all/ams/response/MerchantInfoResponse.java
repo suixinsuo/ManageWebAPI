@@ -6,18 +6,30 @@ import java.util.Date;
 public class MerchantInfoResponse implements Serializable{
 
 	private static final long serialVersionUID = -728400742751848310L;
-	
+	// 商家id
     private String id;
 
+    // 企业性质
     private String isEnterprise;
 
+    // 商家名称
     private String name;
 
+    // 商家状态
     private String status;
 
+    // 商家id
     private Date signDate;
+    
+    private String statusName;
 
-    public String getId() {
+    public String getStatusName() {
+		return statusName;
+	}
+	public void setStatusName(String statusName) {
+		this.statusName = statusName;
+	}
+	public String getId() {
         return id;
     }
     public void setId(String id) {

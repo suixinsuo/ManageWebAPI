@@ -12,7 +12,7 @@ public class AddMerchantForm extends BaseForm{
 
 	private static final long serialVersionUID = 4963307903814951287L;
 	// 商户性质 0：企业 1：个人
-	@NotBlank(message="代理商性质不能为空")
+	@NotBlank(message="商户性质不能为空")
 	@Pattern(regexp = "[01]", message = "代理商性质值只能为0或1")
 	private String isEnterprise;
 	// 商户名称
