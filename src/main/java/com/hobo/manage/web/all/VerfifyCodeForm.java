@@ -16,7 +16,9 @@ public class VerfifyCodeForm implements Serializable{
 	@Size(min=1, max=40, message="邮箱必须是1-40位之间")
 	@Pattern(regexp = RegularValidator.REGEX_EMAIL, message = "邮箱的格式不合法")
 	private String email;
-
+	
+	// 验证码类型，代理商用户登录：agentLogin, 代理商找回密码：agent
+//	private String type;
 	public String getEmail() {
 		return email;
 	}
