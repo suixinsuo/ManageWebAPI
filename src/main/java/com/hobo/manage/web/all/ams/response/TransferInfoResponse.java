@@ -7,14 +7,24 @@ import java.util.Date;
 public class TransferInfoResponse implements Serializable{
 
 	private static final long serialVersionUID = -4914661895142219301L;
+	// 转帐记录ID号
 	private String id;
+	// 申请转帐日期
 	private Date applyDate;
+	// 转帐的金额
 	private BigDecimal transferMoney;
+	// 手续费
 	private BigDecimal charges;
+	// 转帐类型 0:提现 1:转账
 	private String transferType;
+	// 转帐状态(已建好举类型，编码时注意使用) 0: 转账申请
+	//  1: 转账成功 2: 转账失败 3: 转账取消 4：转账处理中
 	private String transferStatus;
+	// 处理转帐日期
 	private Date dealDate;
+	// 收款帐号
 	private String receiveAccount;
+	// 收款户名
 	private String receiveAccountName;
 	public String getId() {
 		return id;

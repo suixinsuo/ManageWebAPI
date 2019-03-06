@@ -1,5 +1,9 @@
 package com.hobo.manage.web.all.ams.request.agent;
 
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.NotBlank;
+
 import com.hobo.manage.web.all.BaseForm;
 
 /**
@@ -14,6 +18,17 @@ public class ReissueForm extends BaseForm{
 	// 代理商ID,或者商家id
 	private String id;
 	
+	// 邮箱
+	@NotBlank(message="邮箱不能为空")
+	@Size(min=1, max=40, message="邮箱必须是1-40位之间")
+	private String email;
+	
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	public String getId() {
 		return id;
 	}
