@@ -41,9 +41,9 @@ public class CacheConstant {
 	 * @return  String 
 	 * @throws
 	 */
-	public static String getSendCodeTotalKey(String token,String key,String mobile) {
+	public static String getSendCodeTotalKey(String token,String mobile) {
 		return new StringBuffer().append("com.hobo.manage.web.ams.constant.CacheConstant.getSendCodeTotalKey")
-				.append(token).append(key).append(mobile).toString();
+				.append(token).append(mobile).toString();
 	}
 	/**
 	 * @Title: getSendCodeKey
@@ -53,9 +53,19 @@ public class CacheConstant {
 	 * @return  String 
 	 * @throws
 	 */
-	public static String getSendCodeKey(String token,String key,String mobile) {
+	public static String getSendCodeKey(String token,String mobile) {
 		return new StringBuffer().append("com.hobo.manage.web.ams.constant.CacheConstant.getSendCodeKey")
-				.append(token).append(key).append(mobile).toString();
+				.append(token).append(mobile).toString();
+	}
+	
+	public static String getModifyPwdErrorTimeKey(String email) {
+		return new StringBuffer().append("com.hobo.manage.web.ams.constant.CacheConstant.getModifyPwdErrorTimeKey")
+				.append(email).toString();
+	}
+	
+	public static String getForgetPwdVerifyCodeKey(String email, String type) {
+		return new StringBuffer().append("com.hobo.manage.web.ams.constant.CacheConstant.getForgetPwdVerifyCodeKey")
+				.append(email).append(type).toString();
 	}
 	
 }
