@@ -11,10 +11,10 @@ import java.io.Serializable;
 public class SendMobileForm implements Serializable{
 
 	private static final long serialVersionUID = 4671680935952954743L;
-	// 发送验证码功能类型，forgetPwd:忘记密码
+	// 发送验证码功能类型，forgetPwd:忘记密码,modifyMobile 修改手机号，modifyEmail
 	private String funtion;
 	
-	// 发送短信携带的校验参数
+	// 发送短信或者邮件携带的校验参数
 	private String token;
 	
 	public String getToken() {
