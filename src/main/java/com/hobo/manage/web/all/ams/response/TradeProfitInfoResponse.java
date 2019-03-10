@@ -12,7 +12,7 @@ import java.util.Date;
 public class TradeProfitInfoResponse implements Serializable {
 	
 	private static final long serialVersionUID = -5405209174792507541L;
-	// 交易编号、业务、交易时间、交易金额、我的分润
+	// 交易编号
 	private String transId;
 	// 交易时间
 	private Date createDate;

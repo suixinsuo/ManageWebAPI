@@ -2,6 +2,10 @@ package com.hobo.manage.web.all.ams.request.trans;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.List;
+
+import com.hobo.domain.sys.TransferBank;
+import com.hobo.manage.web.all.ams.response.BankReponse;
 
 /**
  * @ClassName AccountBankInfoResponse
@@ -25,7 +29,23 @@ public class AccountBankInfoResponse implements Serializable {
     private String mobile;
     // 绑定的邮箱
     private String email;
+    // 手续费收费费率
+    private BigDecimal rate;
     
+    private List<BankReponse> bankList;
+    
+	public List<BankReponse> getBankList() {
+		return bankList;
+	}
+	public void setBankList(List<BankReponse> bankList) {
+		this.bankList = bankList;
+	}
+	public BigDecimal getRate() {
+		return rate;
+	}
+	public void setRate(BigDecimal rate) {
+		this.rate = rate;
+	}
 	public BigDecimal getAccountAvailableAmount() {
 		return accountAvailableAmount;
 	}

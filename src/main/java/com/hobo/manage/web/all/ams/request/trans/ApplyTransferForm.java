@@ -26,14 +26,47 @@ public class ApplyTransferForm extends BaseForm{
 	@NotBlank(message="验证码不能为空")
 	private String verifyCode;
 	
-	// 提现金额
+	// 提现金额 TODO 使用金额正则表达式
 	@NotBlank(message="提现金额不能为空")
-	private BigDecimal amount;
+	private String amount;
 	
 	// 登录密码
 	@NotBlank(message="登录密码不能为空")
 	private String password;
 	
+	// 转账账号
+	private String receiveAccount;
+	
+	// 转账户名
+	private String receiveAccountName;
+	
+	// 转账银行代码
+	private String  receiveBankcode;
+	
+	public String getReceiveAccount() {
+		return receiveAccount;
+	}
+
+	public void setReceiveAccount(String receiveAccount) {
+		this.receiveAccount = receiveAccount;
+	}
+
+	public String getReceiveAccountName() {
+		return receiveAccountName;
+	}
+
+	public void setReceiveAccountName(String receiveAccountName) {
+		this.receiveAccountName = receiveAccountName;
+	}
+
+	public String getReceiveBankcode() {
+		return receiveBankcode;
+	}
+
+	public void setReceiveBankcode(String receiveBankcode) {
+		this.receiveBankcode = receiveBankcode;
+	}
+
 	public String getPassword() {
 		return password;
 	}
@@ -58,11 +91,11 @@ public class ApplyTransferForm extends BaseForm{
 		this.verifyCode = verifyCode;
 	}
 
-	public BigDecimal getAmount() {
+	public String getAmount() {
 		return amount;
 	}
 
-	public void setAmount(BigDecimal amount) {
+	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 }

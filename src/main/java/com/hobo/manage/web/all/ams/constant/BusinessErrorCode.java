@@ -56,6 +56,9 @@ public enum BusinessErrorCode {
 
 	// 提现管理
 	AMOUT_IS_NOTHAVE("AMOUT_IS_NOTHAVE","提现可用余额不足"),
+	RECEIVEACCOUNT_IS_NULL("RECEIVEACCOUNT_IS_NULL","转账账号不能为空"),
+	RECEIVEACCOUNTNAME_IS_NULL("RECEIVEACCOUNTNAME_IS_NULL","转账户名不能为空"),
+	BANKNAME_IS_NULL("BANKNAME_IS_NULL","转账银行不能为空"),
 	;
 	private String id;
 	private String description;
