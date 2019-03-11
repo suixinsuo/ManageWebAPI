@@ -6,21 +6,21 @@ package com.hobo.manage.web.exception;
  * date: 2018年6月3日
  * author:jpg
  */
-public class BizException extends RuntimeException {
+public class ManageCommonException extends RuntimeException {
 	
 	private static final long serialVersionUID = 1L;
 	
 	 private String errorCode;
 	 
-	 public BizException(String message)  {
+	 public ManageCommonException(String message)  {
 		 super(message);
 		 this.errorCode = message;
 	 }
-	 public BizException(String errorCode, String message) {
+	 public ManageCommonException(String errorCode, String message) {
 		 super(message);
 		 this.errorCode = errorCode;
 	 }
-	 public BizException(String errorCode, String msg, Throwable cause) {
+	 public ManageCommonException(String errorCode, String msg, Throwable cause) {
 	        super(msg, cause);
 	        this.errorCode = errorCode;
 	 }

@@ -16,29 +16,29 @@ public class TradeProfitVo implements Serializable {
 	// 每页记录条数
 	private String limit;
 	// 一级代理商id
-	private String proxy1Id;
+	private String agent1Id;
 	// 二级代理商id
-	private String proxy2Id;
+	private String agent2Id;
 	// 三级代理商id
-	private String proxy3Id;
+	private String agent3Id;
 	
-	public String getProxy1Id() {
-		return proxy1Id;
+	public String getAgent1Id() {
+		return agent1Id;
 	}
-	public void setProxy1Id(String proxy1Id) {
-		this.proxy1Id = proxy1Id;
+	public void setAgent1Id(String agent1Id) {
+		this.agent1Id = agent1Id;
 	}
-	public String getProxy2Id() {
-		return proxy2Id;
+	public String getAgent2Id() {
+		return agent2Id;
 	}
-	public void setProxy2Id(String proxy2Id) {
-		this.proxy2Id = proxy2Id;
+	public void setAgent2Id(String agent2Id) {
+		this.agent2Id = agent2Id;
 	}
-	public String getProxy3Id() {
-		return proxy3Id;
+	public String getAgent3Id() {
+		return agent3Id;
 	}
-	public void setProxy3Id(String proxy3Id) {
-		this.proxy3Id = proxy3Id;
+	public void setAgent3Id(String agent3Id) {
+		this.agent3Id = agent3Id;
 	}
 	public Date getBeginDate() {
 		return beginDate;
