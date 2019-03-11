@@ -1,6 +1,7 @@
 package com.hobo.manage.web.all.ams.response;
 
 import java.io.Serializable;
+import java.util.Set;
 
 /**
  * @ClassName LoginResponse
@@ -24,6 +25,17 @@ public class LoginResponse implements Serializable {
 	// 审核未通过原因
 	private String reason;
 	
+	// 菜单权限
+	private Set<String> authList;
+	
+	public Set<String> getAuthList() {
+		return authList;
+	}
+
+	public void setAuthList(Set<String> authList) {
+		this.authList = authList;
+	}
+
 	public String getIsEnterprise() {
 		return isEnterprise;
 	}

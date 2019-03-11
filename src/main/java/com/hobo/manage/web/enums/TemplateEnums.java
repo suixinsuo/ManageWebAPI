@@ -17,6 +17,8 @@ public enum TemplateEnums {
 	ADD_MERCHANT_ACTIVE_LINK("add_merchant_active_link","新增商家激活邮件"),
 	AGENT_FORGET_PWD_BYEMAIL("agent_forget_pwd_byemail","忘记密码校验邮件"),
 	AGENT_MODIFY_EMAILORMOBILE_BYEMAIL("agent_modify_emailormobile_byemail","修改邮箱，手机号校验邮件"),
+	
+	APPLY_TRANSFER("apply_transfer","申请转账"),
 	;
 	
 	private String id;

@@ -2,6 +2,8 @@
 
 import java.io.Serializable;
 
+import org.hibernate.validator.constraints.NotBlank;
+
  /**
  * @ClassName: SendMobileForm
  * @Description: 发送手机验证码
@@ -14,6 +16,7 @@ public class SendMobileForm implements Serializable{
 	// 发送验证码功能类型，
 	// forgetPwdByMobile:忘记密码,modifyMobileByMobile 修改手机号，applyTransferByMobile 申请转账，applyCashByMobile 申请提现，
 	// forgetPwdByEmail:忘记密码,modifyMobileByEmail 修改手机号，applyTransferByEmail 申请转账，applyCashByEmail 申请提现，
+	@NotBlank(message="系统错误")
 	private String function;
 	
 	// 发送短信或者邮件携带的校验参数
