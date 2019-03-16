@@ -17,8 +17,16 @@ public class VerfifyCodeForm implements Serializable{
 	@Pattern(regexp = RegularValidator.REGEX_EMAIL, message = "邮箱的格式不合法")
 	private String email;
 	
-	// 验证码类型，代理商用户登录：agentLogin, 代理商找回密码：agent
-//	private String type;
+	// 验证码类型，代理商用户登录：agentLogin, 代理商找回密码：agentForgetPwd
+	private String type;
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
 	public String getEmail() {
 		return email;
 	}

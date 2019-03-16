@@ -33,4 +33,6 @@ public interface CacheService {
 	 */
 	void delete(String key);
 	
+	String getString(String key);
+	
 }

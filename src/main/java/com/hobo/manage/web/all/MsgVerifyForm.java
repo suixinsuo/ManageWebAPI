@@ -16,12 +16,12 @@ public class MsgVerifyForm implements Serializable {
 	private static final long serialVersionUID = 8843144472341074128L;
 	
 	// 手机短信验证码
-	private String mobileVerifiCode;
+//	private String mobileVerifiCode;
 	
 	// 邮箱验证码
-	@NotBlank(message="邮箱验证码不能为空")
-	private String emailVerifiCode;
-	
+//	@NotBlank(message="邮箱验证码不能为空")
+//	private String emailVerifiCode;
+//	
 	// 携带的token
 	@NotBlank(message="token不能为空")
 	private String token;
@@ -36,21 +36,21 @@ public class MsgVerifyForm implements Serializable {
 		this.password = password;
 	}
 
-	public String getMobileVerifiCode() {
-		return mobileVerifiCode;
-	}
-
-	public void setMobileVerifiCode(String mobileVerifiCode) {
-		this.mobileVerifiCode = mobileVerifiCode;
-	}
-
-	public String getEmailVerifiCode() {
-		return emailVerifiCode;
-	}
-
-	public void setEmailVerifiCode(String emailVerifiCode) {
-		this.emailVerifiCode = emailVerifiCode;
-	}
+//	public String getMobileVerifiCode() {
+//		return mobileVerifiCode;
+//	}
+//
+//	public void setMobileVerifiCode(String mobileVerifiCode) {
+//		this.mobileVerifiCode = mobileVerifiCode;
+//	}
+//
+//	public String getEmailVerifiCode() {
+//		return emailVerifiCode;
+//	}
+//
+//	public void setEmailVerifiCode(String emailVerifiCode) {
+//		this.emailVerifiCode = emailVerifiCode;
+//	}
 
 	public String getToken() {
 		return token;

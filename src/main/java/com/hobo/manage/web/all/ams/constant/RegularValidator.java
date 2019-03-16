@@ -17,8 +17,7 @@ public class RegularValidator {
     /**
      * 正则表达式:验证密码(不包含特殊字符)
      */
-    public static final String REGEX_PASSWORD = "^[a-zA-Z0-9]{6,16}$";
-
+    public static final String REGEX_PASSWORD ="^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,16}$";
     /**
       *说明：移动：134、135、136、137、138、139、150、151、157(TD)、158、159、187、188
       * 联通：130、131、132、152、155、156、185、186
@@ -137,4 +136,10 @@ public class RegularValidator {
     public static boolean isIPAddress(String ipAddress) {
         return Pattern.matches(REGEX_IP_ADDR, ipAddress);
     }
+    public static void main(String[] args) {
+    	String reg = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,16}$";
+    	String password = "jpg123456J11611";
+    	boolean res = Pattern.matches(reg, password);
+    	System.out.println(res);
+	}
 }
