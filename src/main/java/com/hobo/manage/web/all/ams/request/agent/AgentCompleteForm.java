@@ -16,10 +16,6 @@ import com.hobo.manage.web.all.BaseForm;
 public class AgentCompleteForm extends BaseForm {
 
 	private static final long serialVersionUID = 5169357764463958566L;
-	// 企业性质 0：企业 1：个人
-	@NotBlank(message="代理商性质不能为空")
-	@Pattern(regexp = "[01]", message = "代理商性质值只能为0或1")
-	private String isEnterprise;
 	// 名称
 	@NotBlank(message="代理商名称不能为空")
 	@Size(min=1, max=50, message="代理商名称1到50位之间")
@@ -97,12 +93,6 @@ public class AgentCompleteForm extends BaseForm {
 	}
 	public void setBankAccountName(String bankAccountName) {
 		this.bankAccountName = bankAccountName;
-	}
-	public String getIsEnterprise() {
-		return isEnterprise;
-	}
-	public void setIsEnterprise(String isEnterprise) {
-		this.isEnterprise = isEnterprise;
 	}
 	public String getName() {
 		return name;

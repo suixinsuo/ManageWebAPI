@@ -137,8 +137,8 @@ public class RegularValidator {
         return Pattern.matches(REGEX_IP_ADDR, ipAddress);
     }
     public static void main(String[] args) {
-    	String reg = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,16}$";
-    	String password = "jpg123456J11611";
+    	String reg = "^([a-z0-9A-Z]+[-|\\.]?)+[a-z0-9A-Z]@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\.)+[a-zA-Z]{2,}$";
+    	String password = "jpg199359@sina.com";
     	boolean res = Pattern.matches(reg, password);
     	System.out.println(res);
 	}

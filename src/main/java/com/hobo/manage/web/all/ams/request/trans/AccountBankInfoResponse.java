@@ -29,8 +29,6 @@ public class AccountBankInfoResponse implements Serializable {
     private String mobile;
     // 绑定的邮箱
     private String email;
-    // 手续费收费费率
-    private BigDecimal rate;
     
     private List<BankReponse> bankList;
     
@@ -39,12 +37,6 @@ public class AccountBankInfoResponse implements Serializable {
 	}
 	public void setBankList(List<BankReponse> bankList) {
 		this.bankList = bankList;
-	}
-	public BigDecimal getRate() {
-		return rate;
-	}
-	public void setRate(BigDecimal rate) {
-		this.rate = rate;
 	}
 	public BigDecimal getAccountAvailableAmount() {
 		return accountAvailableAmount;
