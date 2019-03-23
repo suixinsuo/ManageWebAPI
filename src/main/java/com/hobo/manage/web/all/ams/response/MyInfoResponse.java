@@ -1,6 +1,7 @@
  package com.hobo.manage.web.all.ams.response;
 
 import java.io.Serializable;
+import java.util.List;
 
  /**
  * @ClassName: MyInfoResponse
@@ -11,37 +12,27 @@ import java.io.Serializable;
 public class MyInfoResponse implements Serializable {
 
 	private static final long serialVersionUID = 8979646852314229884L;
-	// 姓名
-	private String name;
-	// 职务
-	private String position;
-	// 邮箱
-	private String email;
-	// 手机号码
-	private String mobile;
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getPosition() {
-		return position;
-	}
-	public void setPosition(String position) {
-		this.position = position;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	public String getMobile() {
-		return mobile;
-	}
-	public void setMobile(String mobile) {
-		this.mobile = mobile;
-	}
+	// 用户基本信息
+	private BasicInfoResponse basicInfoResponse;
+	// 用户业务信息
+	private List<AgentBusinessInfoResponse> list;
 	
+	public MyInfoResponse () {
+	}
+	public MyInfoResponse (BasicInfoResponse basicInfoResponse,List<AgentBusinessInfoResponse> list) {
+		this.basicInfoResponse = basicInfoResponse;
+		this.list = list;
+	}
+	public BasicInfoResponse getBasicInfoResponse() {
+		return basicInfoResponse;
+	}
+	public void setBasicInfoResponse(BasicInfoResponse basicInfoResponse) {
+		this.basicInfoResponse = basicInfoResponse;
+	}
+	public List<AgentBusinessInfoResponse> getList() {
+		return list;
+	}
+	public void setList(List<AgentBusinessInfoResponse> list) {
+		this.list = list;
+	}
 }

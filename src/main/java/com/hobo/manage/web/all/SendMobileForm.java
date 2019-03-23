@@ -15,7 +15,10 @@ public class SendMobileForm implements Serializable{
 	private static final long serialVersionUID = 4671680935952954743L;
 	// 发送验证码功能类型，
 	// forgetPwdByMobile:忘记密码,modifyMobileByMobile 修改手机号，applyTransferByMobile 申请转账，applyCashByMobile 申请提现，
+	// modifyContactInfoByMobile:修改联系信息，邮箱或手机，
+	
 	// forgetPwdByEmail:忘记密码,modifyMobileByEmail 修改手机号，applyTransferByEmail 申请转账，applyCashByEmail 申请提现，
+	// modifyContactInfoByEmail：修改联系信息，邮箱或手机，
 	@NotBlank(message="系统错误")
 	private String function;
 	

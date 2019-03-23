@@ -9,23 +9,23 @@
 public enum SendMsgFunction {
 	// 发送短信短息
 	FORGET_PWD_BYMOBILE("forgetPwdByMobile", "忘记密码","5"),
-	MODIFY_MOBILE_BYMOBILE("modifyMobileByMobile", "修改手机号","2"),
+	MODIFY_MOBILE_BYMOBILE("modifyMobileByMobile", "修改手机号","5"),
 	APPLY_TRANSFER_BYMOBILE("applyTransferByMobile", "申请转账","5"),
-	APPLY_CASH_BYMOBILE("applyCashByMobile", "申请提现","2"),
+	APPLY_CASH_BYMOBILE("applyCashByMobile", "申请提现","5"),
+	MODIFY_CONTACT_INFO_BYMOBILE("modifyContactInfoByMobile", "修改邮箱或者手机号","5"),
 	
 	// 发送邮件
 	FORGET_PWD_BYEMAIL("forgetPwdByEmail", "忘记密码","5"),
-	MODIFY_MOBILE_BYEMAIL("modifyMobileByEmail", "修改手机号","2"),
+	MODIFY_MOBILE_BYEMAIL("modifyMobileByEmail", "修改手机号","5"),
 	APPLY_TRANSFER_BYEMAIL("applyTransferByEmail", "申请转账","5"),
 	APPLY_CASH_BYEMAIL("applyCashByEmail", "申请提现","5"),
+	MODIFY_CONTACT_INFO_BYEMAIL("modifyContactInfoByEmail", "修改邮箱或者手机号","5"),
 	;
 	
 	// id
 	private String id;
-	
 	// 名称
 	private String name;
-	
 	// 有效时间，分钟为单位
 	private String valiteTime;
 
