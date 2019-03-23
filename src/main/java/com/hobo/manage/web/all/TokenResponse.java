@@ -13,7 +13,7 @@ public class TokenResponse implements Serializable{
 	private static final long serialVersionUID = -7474949129871949664L;
 	private String token;
 	private String email;
-	private String mobiel;
+	private String mobile;
 	public String getEmail() {
 		return email;
 	}
@@ -22,12 +22,12 @@ public class TokenResponse implements Serializable{
 		this.email = email;
 	}
 
-	public String getMobiel() {
-		return mobiel;
+	public String getMobile() {
+		return mobile;
 	}
 
-	public void setMobiel(String mobiel) {
-		this.mobiel = mobiel;
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
 	}
 
 	public String getToken() {

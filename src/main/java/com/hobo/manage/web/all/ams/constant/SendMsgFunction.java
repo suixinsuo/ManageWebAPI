@@ -8,7 +8,7 @@
  */
 public enum SendMsgFunction {
 	// 发送短信短息
-	FORGET_PWD_BYMOBILE("forgetPwdByMobile", "忘记密码","2"),
+	FORGET_PWD_BYMOBILE("forgetPwdByMobile", "忘记密码","5"),
 	MODIFY_MOBILE_BYMOBILE("modifyMobileByMobile", "修改手机号","2"),
 	APPLY_TRANSFER_BYMOBILE("applyTransferByMobile", "申请转账","5"),
 	APPLY_CASH_BYMOBILE("applyCashByMobile", "申请提现","2"),
