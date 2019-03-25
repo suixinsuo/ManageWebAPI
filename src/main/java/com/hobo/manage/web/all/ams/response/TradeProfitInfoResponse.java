@@ -15,23 +15,32 @@ public class TradeProfitInfoResponse implements Serializable {
 	// 交易编号
 	private String transId;
 	// 交易时间
-	private Date createDate;
-    // 业务
+	private String createDate;
+    // 业务id
     private String businessId;
+    // 业务名称
+    private String businessName;
     // 交易金额
     private BigDecimal transAmount;
     // 我的分润
     private BigDecimal myProfit;
+    
+	public String getBusinessName() {
+		return businessName;
+	}
+	public void setBusinessName(String businessName) {
+		this.businessName = businessName;
+	}
 	public String getTransId() {
 		return transId;
 	}
 	public void setTransId(String transId) {
 		this.transId = transId;
 	}
-	public Date getCreateDate() {
+	public String getCreateDate() {
 		return createDate;
 	}
-	public void setCreateDate(Date createDate) {
+	public void setCreateDate(String createDate) {
 		this.createDate = createDate;
 	}
 	public String getBusinessId() {

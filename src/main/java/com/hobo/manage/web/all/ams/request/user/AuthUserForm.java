@@ -2,6 +2,8 @@ package com.hobo.manage.web.all.ams.request.user;
 
 import java.util.Set;
 
+import org.hibernate.validator.constraints.NotBlank;
+
 import com.hobo.manage.web.all.BaseForm;
 
 /**
@@ -14,6 +16,7 @@ public class AuthUserForm extends BaseForm{
 
 	private static final long serialVersionUID = 2674819271724127914L;
 	// 代理商用户id
+	@NotBlank(message="用户id不能为空")
 	private String id;
 	
 	// 授予的菜单集合

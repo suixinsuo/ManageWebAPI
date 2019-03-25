@@ -45,11 +45,13 @@ public class JsonReturn implements Serializable {
 	public static JsonReturn ok() {
 		JsonReturn jsonReturn = new JsonReturn();
 		jsonReturn.setResult(true);
+		jsonReturn.setCode("200");
 		return jsonReturn;
 	}
 	public static JsonReturn fali() {
 		JsonReturn jsonReturn = new JsonReturn();
 		jsonReturn.setResult(false);
+		jsonReturn.setCode("200");
 		return jsonReturn;
 	}
 	
@@ -57,6 +59,7 @@ public class JsonReturn implements Serializable {
 		JsonReturn jsonReturn = new JsonReturn();
 		jsonReturn.setResult(true);
 		jsonReturn.setData(object);
+		jsonReturn.setCode("200");
 		return jsonReturn;
 	}
 	
@@ -65,6 +68,7 @@ public class JsonReturn implements Serializable {
 		jsonReturn.setResult(false);
 		jsonReturn.setErrorCode(errorCode);
 		jsonReturn.setErrorMsg(errorMsg);
+		jsonReturn.setCode("200");
 		return jsonReturn;
 	}
 	

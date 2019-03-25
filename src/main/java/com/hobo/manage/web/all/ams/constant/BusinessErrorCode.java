@@ -21,7 +21,7 @@ public enum BusinessErrorCode {
 	TOKEN_IS_INVALID("TOKEN_IS_INVALID", "登录已失效，请重新登录"),
 	IMAGE_IS_INVALID("IMAGE_IS_INVALID", "图片验证码已失效"),
 	IMAGE_IS_ERROR("IMAGE_IS_ERROR", "图片验证码错误"),
-	USER_MUSTBE_ADMIN("USER_MUSTBE_ADMIN", "用户必须为管理员"),
+	USER_MUSTBE_ADMIN("USER_MUSTBE_ADMIN", "管理员才有此操作权限"),
 	EMAIL_IS_OCCUPY("EMAIL_IS_OCCUPY", "邮箱已使用"),
 	MOBILE_IS_OCCUPY("MOBILE_IS_OCCUPY", "手机号已使用"),
 	URL_IS_EXPIRED("URL_IS_EXPIRED", "链接已失效"),

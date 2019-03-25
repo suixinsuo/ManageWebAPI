@@ -15,6 +15,15 @@ public class NoticeResponse implements Serializable {
 	private long unreadCount;
 	// 公告信息
 	private List<NoticeInfoResponse> notices;
+	// 公告总条数
+	private long total;
+	
+	public long getTotal() {
+		return total;
+	}
+	public void setTotal(long total) {
+		this.total = total;
+	}
 	public long getUnreadCount() {
 		return unreadCount;
 	}
