@@ -19,11 +19,11 @@ public class OrderRefundResponse implements Serializable {
 	// 退款编号
 	private String refundId;
 	// 申请时间
-	private Date applyDate;
+	private String applyDate;
 	// 退款状态
 	private String refundStatus;
 	// 退款时间
-	private Date refundDate;
+	private String refundDate;
 	// 退款金额
 	private BigDecimal refundAmount;
 	// 订单金额
@@ -49,23 +49,11 @@ public class OrderRefundResponse implements Serializable {
 	public void setRefundId(String refundId) {
 		this.refundId = refundId;
 	}
-	public Date getApplyDate() {
-		return applyDate;
-	}
-	public void setApplyDate(Date applyDate) {
-		this.applyDate = applyDate;
-	}
 	public String getRefundStatus() {
 		return refundStatus;
 	}
 	public void setRefundStatus(String refundStatus) {
 		this.refundStatus = refundStatus;
-	}
-	public Date getRefundDate() {
-		return refundDate;
-	}
-	public void setRefundDate(Date refundDate) {
-		this.refundDate = refundDate;
 	}
 	public BigDecimal getRefundAmount() {
 		return refundAmount;
@@ -79,4 +67,17 @@ public class OrderRefundResponse implements Serializable {
 	public void setOrderMoney(BigDecimal orderMoney) {
 		this.orderMoney = orderMoney;
 	}
+	public String getApplyDate() {
+		return applyDate;
+	}
+	public void setApplyDate(String applyDate) {
+		this.applyDate = applyDate;
+	}
+	public String getRefundDate() {
+		return refundDate;
+	}
+	public void setRefundDate(String refundDate) {
+		this.refundDate = refundDate;
+	}
+	
 }

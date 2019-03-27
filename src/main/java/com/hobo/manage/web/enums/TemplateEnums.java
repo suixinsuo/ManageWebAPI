@@ -15,6 +15,8 @@ public enum TemplateEnums {
 	ADD_AGENT_USER_ACTIVE_EMAIL("add_agent_user_active_email","新增代理商用户激活邮件"),
 	ADD_AGENT_ACTIVE_LINK("add_agent_active_link","新增代理商激活邮件"),
 	ADD_MERCHANT_ACTIVE_LINK("add_merchant_active_link","新增商家激活邮件"),
+	
+	ADD_MERCHANTUSER_ACTIVE_LINK("add_merchantuser_active_link","新增商家用户激活邮件"),
 	SEND_EMAIL_CODE("send_email_code","发送邮件验证码统一模板"),
 	;
 	

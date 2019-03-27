@@ -1,8 +1,11 @@
  package com.hobo.manage.web.all.merchant.request;
 
+import javax.validation.constraints.Pattern;
+
 import org.hibernate.validator.constraints.NotBlank;
 
 import com.hobo.manage.web.all.BaseForm;
+import com.hobo.manage.web.all.ams.constant.RegularValidator;
 
  /**
  * @ClassName: ApplyRefundForm
@@ -16,6 +19,7 @@ public class ApplyRefundForm extends BaseForm {
 	private static final long serialVersionUID = 5139498302486053685L;
 	// 退款金额
 	@NotBlank(message="退款金额不能为空")
+	@Pattern(regexp = RegularValidator.REGEX_AMOUNT, message = "金额格式不合法")
 	private String refundAmount;
 	
 	// 退款订单号
