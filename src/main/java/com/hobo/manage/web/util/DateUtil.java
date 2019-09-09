@@ -5,6 +5,8 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+import org.apache.commons.lang3.StringUtils;
+
 /**
  * className:DateUtil.java
  * description: 时间处理工具类
@@ -17,6 +19,9 @@ public class DateUtil {
 	 * 格式化时间为yyyy
 	 */
 	public static String formatDate(Date date) {
+		if (null == date) {
+			return null;
+		}
 		String str = null;
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		str = formatter.format(date);
@@ -24,12 +29,18 @@ public class DateUtil {
 	}
 	
 	public static String formatStringDate(Date date) {
+		if (null == date) {
+			return null;
+		}
 		String str = null;
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMddHHmmss");
 		str = formatter.format(date);
 		return str;
 	}
 	public static Date formatDate(String dateStr) {
+		if (StringUtils.isBlank(dateStr)) {
+			return null;
+		}
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		Date date = null;
 		try {

@@ -18,6 +18,16 @@ public enum TemplateEnums {
 	
 	ADD_MERCHANTUSER_ACTIVE_LINK("add_merchantuser_active_link","新增商家用户激活邮件"),
 	SEND_EMAIL_CODE("send_email_code","发送邮件验证码统一模板"),
+	
+	// 总后台
+	ADD_SYSUSER_ACTIVE_LINK("add_sysuser_active_link","新增总后台用户激活邮件"),
+	RESET_SYSUSER_PWD_ACTIVE_LINK("reset_sysuser_pwd_active_link","重置总后台用户激活邮件"),
+	AUDIT_SUCCESS_AGENT_EMAIL("audit_success_agent_email","审核代理商通过通知邮件"),
+	AUDIT_FAIL_AGENT_EMAIL("audit_fail_agent_email","审核代理商不通过通知邮件"),
+	AUDIT_SUCCESS_MERCHANT_EMAIL("audit_success_merchant_email","审核商家通过通知邮件"),
+	AUDIT_FAIL_MERCHANT_EMAIL("audit_fail_merchant_email","审核商家不通过通知邮件"),
+
+	
 	;
 	
 	private String id;
