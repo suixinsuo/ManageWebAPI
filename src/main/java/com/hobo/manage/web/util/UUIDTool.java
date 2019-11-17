@@ -8,7 +8,7 @@ public class UUIDTool {
 	 * description: 生成32位唯一uuid
 	 * retrun_type:String
 	 * date: 2018年6月23日
-	 * author:jpg
+	 * author:
 	 */
 	public static String getUUID() {  
         return UUID.randomUUID().toString().replace("-", "");  

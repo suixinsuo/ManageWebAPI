@@ -11,7 +11,7 @@ import javax.validation.ValidatorFactory;
 /**
  * @ClassName VlidationUtil
  * @Description form bean 校验类
- * @Author jpg
+ * @Author 
  * @Date 2019年1月27日 下午10:18:28
  */
 public class VlidationUtil {

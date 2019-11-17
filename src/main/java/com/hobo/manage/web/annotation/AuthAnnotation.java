@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 /**
  * @ClassName AuthAnnotation
  * @Description 自定义注解类
- * @Author jpg
+ * @Author 
  * @Date 2019年2月7日 下午4:40:08
  */
 // 表示作用在方法上

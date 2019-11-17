@@ -4,7 +4,7 @@ package com.hobo.manage.web.exception;
  * className:BizException.java
  * description: 自定义异常
  * date: 2018年6月3日
- * author:jpg
+ * author:
  */
 public class ManageCommonException extends RuntimeException {
 	

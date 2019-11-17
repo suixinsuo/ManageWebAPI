@@ -53,16 +53,30 @@
 		</dependency>
 
 	</dependencies>
-	<repositories>
-		<repository>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<id>central</id>
-			<name>Maven Repository Switchboard</name>
-			<url>http://repo2.maven.org/maven2</url>
-		</repository>
-	</repositories>
+	
+	<repositories>  
+        <repository>  
+            <id>public</id>  <!--这个ID需要与你的组group ID一致--> 
+            <name>Public Repository</name>
+            <url>http://106.13.10.174:8081/nexus/content/groups/public</url>   
+        </repository>  
+    </repositories> 
+
+    <!-- 打包发布 -->
+    <distributionManagement>
+        <repository>
+            <id>releases</id><!--这个ID需要与你的release仓库的Repository ID一致-->
+<!--             <url>http://106.13.10.174:8081/repository/maven-releases</url> -->
+            <url>http://localhost:8081/nexus/content/repositories/releases/</url>
+        </repository>
+
+        <snapshotRepository>
+            <id>snapshots</id><!--这个ID需要与你的snapshots仓库的Repository ID一致-->
+<!--             <url>http://106.13.10.174:8081/repository/maven-snapshots</url> -->
+            <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+    
 
 	<build>
 		<plugins>

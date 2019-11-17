@@ -26,7 +26,7 @@ public class StringComm {
 	static int[] weight={7,9,10,5,8,4,2,1,6,3,7,9,10,5,8,4,2};    //十七位数字本体码权重
 	static String[] validate={ "1","0","X","9","8","7","6","5","4","3","2"};    //mod11,对应校验码字符值    
     
-	public static final String[] picExtensions ={"jpg", "jpeg", "gif", "png", "bmp"};
+	public static final String[] picExtensions ={"", "jpeg", "gif", "png", "bmp"};
 	
     public static String getValidateCode(String id17){
         int sum=0;

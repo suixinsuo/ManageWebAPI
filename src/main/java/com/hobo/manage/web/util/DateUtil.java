@@ -11,7 +11,7 @@ import org.apache.commons.lang3.StringUtils;
  * className:DateUtil.java
  * description: 时间处理工具类
  * date: 2018年7月13日
- * author:jpg
+ * author:
  */
 public class DateUtil {
 	
@@ -55,7 +55,7 @@ public class DateUtil {
 	 * description: 获取当前时间年份
 	 * retrun_type:int
 	 * date: 2018年7月13日
-	 * author:jpg
+	 * author:
 	 */
 	public static int getCurrentYear() {
 		Calendar a=Calendar.getInstance();
