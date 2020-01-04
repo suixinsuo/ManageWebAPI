@@ -76,13 +76,24 @@
 		</dependency>
 	</dependencies>
 	
-	<repositories>  
+	<!-- <repositories>  
         <repository>  
-            <id>public</id>  <!--这个ID需要与你的组group ID一致--> 
+            <id>public</id>  这个ID需要与你的组group ID一致 
             <name>Public Repository</name>
             <url>http://106.13.10.174:8081/nexus/content/groups/public</url>   
         </repository>  
-    </repositories> 
+    </repositories>  -->
+    
+    <repositories>
+		<repository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>central</id>
+			<name>Maven Repository Switchboard</name>
+			<url>http://repo2.maven.org/maven2</url>
+		</repository>
+	</repositories>
 
     <!-- 打包发布 -->
     <distributionManagement>
